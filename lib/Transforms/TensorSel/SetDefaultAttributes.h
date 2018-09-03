@@ -1,12 +1,12 @@
-//===- DefaultAttributes.h --------------------------------------------------===//
+//===- SetDefaultAttributes.h -----------------------------------------------===//
 //
 //                             The ONNC Project
 //
 // See LICENSE.TXT for details.
 //
 //===----------------------------------------------------------------------===//
-#ifndef ONNC_TRANSFORMS_TENSORSEL_DEFAULTATTRIBUTES_H
-#define ONNC_TRANSFORMS_TENSORSEL_DEFAULTATTRIBUTES_H
+#ifndef ONNC_TRANSFORMS_TENSORSEL_SET_DEFAULT_ATTRIBUTES_H
+#define ONNC_TRANSFORMS_TENSORSEL_SET_DEFAULT_ATTRIBUTES_H
 #include <onnc/Config/ONNX.h>
 
 namespace onnc {

@@ -8,7 +8,7 @@
 #include <onnc/Transforms/TensorSel/Lower.h>
 #include <onnc/Transforms/TensorSel/Standards/MeanVarianceNormalizationLower.h>
 #include <onnc/IR/Compute/MeanVarianceNormalization.h>
-#include "DefaultAttributes.h"
+#include "SetDefaultAttributes.h"
 #include <onnc/IR/IRBuilder.h>
 
 using namespace onnc;

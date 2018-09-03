@@ -8,7 +8,7 @@
 #include <onnc/Transforms/TensorSel/Lower.h>
 #include <onnc/Transforms/TensorSel/Standards/ReduceMinLower.h>
 #include <onnc/IR/Compute/ReduceMin.h>
-#include "DefaultAttributes.h"
+#include "SetDefaultAttributes.h"
 #include <onnc/IR/IRBuilder.h>
 
 using namespace onnc;

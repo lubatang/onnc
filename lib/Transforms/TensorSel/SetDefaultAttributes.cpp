@@ -1,11 +1,11 @@
-//===- DefaultAttributes.cpp ------------------------------------------------===//
+//===- SetDefaultAttributes.cpp ---------------------------------------------===//
 //
 //                             The ONNC Project
 //
 // See LICENSE.TXT for details.
 //
 //===----------------------------------------------------------------------===//
-#include "DefaultAttributes.h"
+#include "SetDefaultAttributes.h"
 #include <onnc/Config/ONNX.h>
 #include <onnc/IR/ComputeVisitor.h>
 #include <onnc/IR/ComputeOperator.h>

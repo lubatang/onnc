@@ -29,7 +29,6 @@ add_libonnc_src(
     TensorSel/ConvTransposeLower.cpp
     TensorSel/CosLower.cpp
     TensorSel/CropLower.cpp
-    TensorSel/DefaultAttributes.cpp
     TensorSel/DepthToSpaceLower.cpp
     TensorSel/DivLower.cpp
     TensorSel/DropoutLower.cpp
@@ -102,6 +101,7 @@ add_libonnc_src(
     TensorSel/ScaleLower.cpp
     TensorSel/ScaledTanhLower.cpp
     TensorSel/SeluLower.cpp
+    TensorSel/SetDefaultAttributes.cpp
     TensorSel/ShapeLower.cpp
     TensorSel/SigmoidLower.cpp
     TensorSel/SinLower.cpp
