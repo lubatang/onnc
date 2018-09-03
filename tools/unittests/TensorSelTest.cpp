@@ -99,7 +99,7 @@ SKYPAT_F(TensorSelTest, alexnet)
   int counter = 0;
   pm.step(module, state);
   {
-    errs() << state.pass->getPassName() << std::endl;
+    errs() << state << std::endl;
     OFStream os((Rope(++counter) + Rope(".") +
                  Rope(state.pass->getPassName()) + (".log")).str());
     module.print(os);
@@ -108,7 +108,7 @@ SKYPAT_F(TensorSelTest, alexnet)
   // UpdateGraphOutputSizePass
   pm.step(module, state);
   {
-    errs() << state.pass->getPassName() << std::endl;
+    errs() << state << std::endl;
     OFStream os((Rope(++counter) + Rope(".") +
                  Rope(state.pass->getPassName()) + (".log")).str());
     module.print(os);
@@ -117,7 +117,7 @@ SKYPAT_F(TensorSelTest, alexnet)
   // DeadNodeEliminationPass
   pm.step(module, state);
   {
-    errs() << state.pass->getPassName() << std::endl;
+    errs() << state << std::endl;
     OFStream os((Rope(++counter) + Rope(".") +
                  Rope(state.pass->getPassName()) + (".log")).str());
     module.print(os);
@@ -126,7 +126,7 @@ SKYPAT_F(TensorSelTest, alexnet)
   // BookONNXGraphs
   pm.step(module, state);
   {
-    errs() << state.pass->getPassName() << std::endl;
+    errs() << state << std::endl;
     OFStream os((Rope(++counter) + Rope(".") +
                  Rope(state.pass->getPassName()) + (".log")).str());
     module.print(os);
@@ -135,7 +135,7 @@ SKYPAT_F(TensorSelTest, alexnet)
   // BuildInitializers
   pm.step(module, state);
   {
-    errs() << state.pass->getPassName() << std::endl;
+    errs() << state << std::endl;
     OFStream os((Rope(++counter) + Rope(".") +
                  Rope(state.pass->getPassName()) + (".log")).str());
     module.print(os);
@@ -144,7 +144,7 @@ SKYPAT_F(TensorSelTest, alexnet)
   // BuildInputOperators
   pm.step(module, state);
   {
-    errs() << state.pass->getPassName() << std::endl;
+    errs() << state << std::endl;
     OFStream os((Rope(++counter) + Rope(".") +
                  Rope(state.pass->getPassName()) + (".log")).str());
     module.print(os);
@@ -153,7 +153,7 @@ SKYPAT_F(TensorSelTest, alexnet)
   // TensorSel 
   pm.step(module, state);
   {
-    errs() << state.pass->getPassName() << std::endl;
+    errs() << state << std::endl;
     OFStream os((Rope(++counter) + Rope(".") +
                  Rope(state.pass->getPassName()) + (".log")).str());
     module.print(os);
@@ -162,7 +162,7 @@ SKYPAT_F(TensorSelTest, alexnet)
   // BuildOutputOperators
   pm.step(module, state);
   {
-    errs() << state.pass->getPassName() << std::endl;
+    errs() << state << std::endl;
     OFStream os((Rope(++counter) + Rope(".") +
                  Rope(state.pass->getPassName()) + (".log")).str());
     module.print(os);

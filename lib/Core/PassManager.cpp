@@ -17,6 +17,7 @@
 using namespace onnc;
 
 char PassManager::StartPass::ID = 0;
+
 //===----------------------------------------------------------------------===//
 // PassManager
 //===----------------------------------------------------------------------===//
@@ -269,5 +270,22 @@ void PassManager::UpdateExecutionOrder(ExecutionOrder& pOrder)
       pOrder.push_front((*ele)->pass->getPassID());
     }
     ++ele;
+  }
+}
+
+//===----------------------------------------------------------------------===//
+// PassManager::State
+//===----------------------------------------------------------------------===//
+void PassManager::State::print(std::ostream& pOS) const
+{
+  if (nullptr != pass) {
+    pOS << "[" << pass->getPassName() << "]";
+    if (changed)
+      pOS << " changed";
+    else
+      pOS << " not changed";
+  }
+  else {
+    pOS << "[null pass]";
   }
 }

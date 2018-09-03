@@ -13,6 +13,7 @@
 #include <onnc/Core/PassRegistry.h>
 #include <onnc/IR/Module.h>
 #include <onnc/ADT/Digraph.h>
+#include <ostream>
 #include <map>
 
 namespace onnc {
@@ -34,6 +35,9 @@ public:
     Pass* pass; // current pass
 
     State() : execution(), changed(false), pass(nullptr) { }
+
+    /// convenient function for debug
+    void print(std::ostream& pOS) const;
   };
 
 public:
@@ -142,6 +146,13 @@ private:
 
   DepNode *m_pStart;
 };
+
+inline std::ostream&
+operator<<(std::ostream& pOS, const PassManager::State& pState)
+{
+  pState.print(pOS);
+  return pOS;
+}
 
 } // namespace of onnc
 
