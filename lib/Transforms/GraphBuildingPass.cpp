@@ -16,6 +16,7 @@ GraphBuildingPass::GraphBuildingPass(char& pPassID)
   : ModulePass(pPassID) {
 }
 
+/// Driver of runOnGraphs() virtual function
 Pass::ReturnType GraphBuildingPass::runOnModule(::onnc::Module &pModule)
 {
   if (!pModule.hasRootTensorGraph())
